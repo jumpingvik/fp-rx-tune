@@ -121,7 +121,7 @@ class CarController:
 
     # *** gas and brake ***
     if self.CP.enableGasInterceptor and CC.longActive:
-      MAX_INTERCEPTOR_GAS = 0.45
+      MAX_INTERCEPTOR_GAS = 0.40
       # RX custom tune
       if self.CP.carFingerprint in (CAR.LEXUS_RX):
         PEDAL_SCALE = interp(CS.out.vEgo, [0.0, MIN_ACC_SPEED, MIN_ACC_SPEED + PEDAL_TRANSITION], [0.13, 0.23, 0.0])
